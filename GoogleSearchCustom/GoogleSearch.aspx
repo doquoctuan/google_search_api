@@ -10,17 +10,18 @@
             margin-left: 20%;
         }
         .text{
-            border-radius:20px;
+            border-radius:30px;
             border:1px solid black;
             border-style:none;
             box-shadow:1px 1px 3px #808080;
             outline:none;
-            width:500px;
+            width:430px;
             padding:10px;
             font-size:17px;
-            text-indent:35px;
             font-family: arial,sans-serif;
             margin-left:30%;
+            padding-right:70px;
+            padding-left:45px;
         }
         .text:hover{
             box-shadow:1px 2px 20px #808080;
@@ -46,13 +47,13 @@
         #fas{
             position:absolute;
             color:#d7d7c5;
-            margin-left:460px;
+            margin-left:470px;
             margin-top:13px
         }
         #fas1{
             position:absolute;
             color:#d7d7c5;
-            margin-left:890px;
+            margin-left:935px;
             margin-top:13px;
             cursor:pointer;
             color:#1c1717;
@@ -60,7 +61,7 @@
         #fas2{
             position:absolute;
             color:#d7d7c5;
-            margin-left:930px;
+            margin-left:970px;
             margin-top:13px;
             color:#e76641;
             cursor:pointer;
@@ -77,7 +78,7 @@
         }
         #daylabangne{
             margin-left:20%;
-            max-width:900px;
+            max-width:920px;
         }
         .tddisplaylink{
             color:#1c8b56;
@@ -100,9 +101,10 @@
             color:#808080;
         }
         #btnPrePage,#btnNextPage{
-            padding:10px;
             font-size:15px;
             width:120px;
+            height:30px;
+            bottom:auto;
             background-color:#f8f9fa;
             border-style:none;
             border-radius:10px; 
@@ -115,7 +117,7 @@
         .button1{
             display:inline-block;
             flex-direction:row;
-            margin-left:42%;
+            margin-left:44%;
         }
     </style>
     
@@ -139,8 +141,8 @@
             <asp:Label ID="lbResult" runat="server" Width="916px" Font-Size="Larger"></asp:Label>
     </p>
         <div class="button1">
-            <asp:Button ID="btnPrePage" runat="server" Text="Previous" OnClick="btnPrePage_Click" />
-            <asp:Button ID="btnNextPage" runat="server" Text="Next" OnClick="Button1_Click" />  
+            <asp:Button ID="btnPrePage" runat="server" Text="< Previous" OnClick="btnPrePage_Click" />
+            <asp:Button ID="btnNextPage" runat="server" Text="Next >" OnClick="Button1_Click" />  
         </div>  
     </form>
     <a href="#"><i id="up"class="fa fa-arrow-up" style="font-size:17px;"></i></a>
